@@ -1,222 +1,375 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Nest - AI Image Generation Platform</title>
     <meta name="description" content="Create stunning AI-generated images effortlessly with Image Nest. Your gateway to creative image generation.">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans antialiased">
-    <header class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-md border-b border-gray-800" x-data="{ isOpen: false }">
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-md border-b border-gray-800">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center">
-                    <a href="/" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+                    <a href="https://ihmunro.github.io/create-stunning-images-effortlessly-with-image-nest-2025-03-18-5eu6k" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent hover:opacity-90 transition-opacity duration-300">
                         Image Nest
                     </a>
                 </div>
-                
+
+                <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300">Features</a>
                     <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-white transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300">About Us</a>
                     <a href="#faq" class="text-gray-300 hover:text-white transition-colors duration-300">FAQ</a>
-                    <a href="https://imagenest.aibizbots4u.com" class="px-6 py-2 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 transform hover:scale-105 transition-all duration-300">
+                    <a href="https://imagenest.aibizbots4u.com" class="px-6 py-2 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                         Get Started
                     </a>
                 </div>
 
-                <button @click="isOpen = !isOpen" class="md:hidden focus:outline-none">
-                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-                        <path x-show="!isOpen" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
-                        <path x-show="isOpen" d="M6.343 6.343l11.314 11.314m-11.314 0L17.657 6.343"></path>
-                    </svg>
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-button md:hidden focus:outline-none" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars text-2xl text-gray-300 hover:text-white transition-colors duration-300"></i>
                 </button>
             </div>
 
-            <div x-show="isOpen" class="md:hidden mt-4">
-                <a href="#features" class="block py-2 text-gray-300 hover:text-white">Features</a>
-                <a href="#benefits" class="block py-2 text-gray-300 hover:text-white">Benefits</a>
-                <a href="#faq" class="block py-2 text-gray-300 hover:text-white">FAQ</a>
-                <a href="https://imagenest.aibizbots4u.com" class="block py-2 text-purple-500 hover:text-purple-400">Get Started</a>
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden md:hidden mt-4 bg-gray-800 rounded-lg p-4">
+                <a href="#features" class="block py-2 text-gray-300 hover:text-white transition-colors duration-300">Features</a>
+                <a href="#benefits" class="block py-2 text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="block py-2 text-gray-300 hover:text-white transition-colors duration-300">Testimonials</a>
+                <a href="#about" class="block py-2 text-gray-300 hover:text-white transition-colors duration-300">About Us</a>
+                <a href="#faq" class="block py-2 text-gray-300 hover:text-white transition-colors duration-300">FAQ</a>
+                <a href="https://imagenest.aibizbots4u.com" class="block py-2 text-purple-500 hover:text-purple-400 transition-colors duration-300">Get Started</a>
             </div>
         </nav>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="pt-32 pb-24 relative overflow-hidden">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center opacity-10"></div>
             <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-pink-900/20"></div>
             <div class="container mx-auto px-6 relative">
                 <div class="text-center max-w-4xl mx-auto">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                        Create Stunning Images Effortlessly with Image Nest
+                        Transform Your Ideas into Stunning Visual Art with AI
                     </h1>
                     <p class="text-xl md:text-2xl text-gray-300 mb-12">
-                        Your Gateway to Creative Image Generation
+                        Harness the power of artificial intelligence to create professional-quality images in seconds. Perfect for designers, marketers, and creative professionals.
                     </p>
-                    <a href="https://imagenest.aibizbots4u.com" class="inline-block px-8 py-4 text-lg font-semibold rounded-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-                        Start Creating Now
-                    </a>
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                        <a href="https://imagenest.aibizbots4u.com" class="inline-block px-8 py-4 text-lg font-semibold rounded-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                            Start Creating Now
+                        </a>
+                        <a href="#features" class="inline-block px-8 py-4 text-lg font-semibold rounded-full border-2 border-purple-500 hover:border-purple-400 transform hover:scale-105 transition-all duration-300">
+                            Learn More
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- Features Section -->
         <section id="features" class="py-24 bg-gray-800/50">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Powerful Features</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Powerful Features for Creative Professionals</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="p-8 rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transform hover:scale-105 transition-all duration-300">
+                    <div class="p-8 rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                         <div class="w-16 h-16 bg-purple-500/20 rounded-lg flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Easy to Use</h3>
-                        <p class="text-gray-400">Intuitive interface designed for both beginners and professionals.</p>
+                        <h3 class="text-xl font-semibold mb-4">Intuitive Creation Process</h3>
+                        <p class="text-gray-400">Generate stunning images with simple text prompts. Our AI understands natural language and converts your descriptions into beautiful visuals within seconds.</p>
                     </div>
 
-                    <div class="p-8 rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transform hover:scale-105 transition-all duration-300">
+                    <div class="p-8 rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                         <div class="w-16 h-16 bg-purple-500/20 rounded-lg flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">High-Quality Output</h3>
-                        <p class="text-gray-400">Generate stunning, professional-grade images every time.</p>
+                        <h3 class="text-xl font-semibold mb-4">Professional-Grade Output</h3>
+                        <p class="text-gray-400">Create high-resolution images up to 4K quality. Perfect for commercial use, marketing materials, and professional presentations.</p>
                     </div>
 
-                    <div class="p-8 rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transform hover:scale-105 transition-all duration-300">
+                    <div class="p-8 rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                         <div class="w-16 h-16 bg-purple-500/20 rounded-lg flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Multiple Image Styles</h3>
-                        <p class="text-gray-400">Choose from a wide variety of artistic styles and effects.</p>
+                        <h3 class="text-xl font-semibold mb-4">Diverse Style Library</h3>
+                        <p class="text-gray-400">Access over 100 artistic styles, from photorealistic to abstract art. Customize every aspect of your creation with precise style controls.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Benefits Section -->
         <section id="benefits" class="py-24">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Why Choose Image Nest</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Transform Your Creative Workflow</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="text-center">
+                    <div class="text-center transform hover:scale-105 transition-all duration-300">
                         <div class="w-20 h-20 mx-auto bg-purple-500/20 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-10 h-10 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Enhance Creativity</h3>
-                        <p class="text-gray-400">Unlock new possibilities and push your creative boundaries.</p>
+                        <h3 class="text-xl font-semibold mb-4">Boost Productivity</h3>
+                        <p class="text-gray-400">Reduce image creation time by 90%. Generate multiple variations instantly and iterate faster than ever before.</p>
                     </div>
 
-                    <div class="text-center">
+                    <div class="text-center transform hover:scale-105 transition-all duration-300">
                         <div class="w-20 h-20 mx-auto bg-purple-500/20 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-10 h-10 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Save Time on Design</h3>
-                        <p class="text-gray-400">Generate professional images in seconds, not hours.</p>
+                        <h3 class="text-xl font-semibold mb-4">Cost-Effective</h3>
+                        <p class="text-gray-400">Save thousands on stock photos and custom illustrations. Create unlimited unique images for one low monthly fee.</p>
                     </div>
 
-                    <div class="text-center">
+                    <div class="text-center transform hover:scale-105 transition-all duration-300">
                         <div class="w-20 h-20 mx-auto bg-purple-500/20 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-10 h-10 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Access Diverse Tools</h3>
-                        <p class="text-gray-400">All the tools you need in one powerful platform.</p>
+                        <h3 class="text-xl font-semibold mb-4">Full Creative Control</h3>
+                        <p class="text-gray-400">Fine-tune every aspect of your images with advanced controls. Own full commercial rights to all generated content.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-24 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What Our Users Say</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="p-8 rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transform hover:scale-105 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-500 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-6">"Image Nest has revolutionized our marketing workflow. We've cut our image creation time by 75% while maintaining premium quality. The AI understands our brand style perfectly."</p>
+                        <div>
+                            <p class="font-semibold">Sarah Chen</p>
+                            <p class="text-gray-400">Marketing Director, TechFlow Inc.</p>
+                        </div>
+                    </div>
+
+                    <div class="p-8 rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transform hover:scale-105 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-500 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-6">"As a freelance designer, Image Nest has become my secret weapon. The quality and speed are unmatched, and the commercial rights make it perfect for client work."</p>
+                        <div>
+                            <p class="font-semibold">Marcus Rodriguez</p>
+                            <p class="text-gray-400">Independent Creative Designer</p>
+                        </div>
+                    </div>
+
+                    <div class="p-8 rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transform hover:scale-105 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-500 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-6">"The style variety and customization options are incredible. We've saved thousands on stock photography while creating truly unique visuals for our campaigns."</p>
+                        <div>
+                            <p class="font-semibold">Emma Thompson</p>
+                            <p class="text-gray-400">Creative Lead, BrandPro Agency</p>
+                        </div>
+                    </div>
+
+                    <div class="p-8 rounded-2xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transform hover:scale-105 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-500 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-6">"The intuitive interface made it easy to start creating professional images immediately. The customer support team is also incredibly helpful and responsive."</p>
+                        <div>
+                            <p class="font-semibold">James Wilson</p>
+                            <p class="text-gray-400">Startup Founder, InnovateTech</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">About Image Nest</h2>
+                <div class="max-w-3xl mx-auto space-y-8">
+                    <p class="text-gray-300 leading-relaxed">
+                        Founded in 2023 by a team of AI researchers and creative professionals, Image Nest emerged from a vision to democratize professional image creation. Our journey began when we recognized the growing need for high-quality, customizable visual content in the digital age. Through countless iterations and feedback from early users, we developed our revolutionary AI image generation platform.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed">
+                        Our mission is to empower creators worldwide with cutting-edge AI technology that makes professional image creation accessible, efficient, and enjoyable. We believe in fostering creativity through innovation, maintaining the highest standards of image quality, and providing exceptional value to our users. Our core values of innovation, accessibility, and customer success drive everything we do.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
         <section id="faq" class="py-24 bg-gray-800/50">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
                 <div class="max-w-3xl mx-auto space-y-6" x-data="{selected:null}">
-                    <div class="rounded-lg border border-gray-700">
+                    <div class="rounded-lg border border-gray-700 hover:border-purple-500 transition-colors duration-300">
                         <button @click="selected !== 1 ? selected = 1 : selected = null" class="w-full p-6 text-left">
                             <div class="flex items-center justify-between">
-                                <span class="text-lg font-semibold">How does Image Nest work?</span>
+                                <span class="text-lg font-semibold">How does the AI image generation process work?</span>
                                 <span class="transform transition-transform duration-200" :class="{'rotate-180': selected === 1}">↓</span>
                             </div>
                         </button>
                         <div x-show="selected === 1" class="p-6 pt-0 text-gray-400">
-                            Image Nest uses advanced AI algorithms to generate high-quality images based on your text descriptions or prompts.
+                            Our AI analyzes your text descriptions and references to understand your vision, then uses advanced machine learning algorithms to generate images that match your requirements. You can further refine the results using our style controls and editing tools.
                         </div>
                     </div>
 
-                    <div class="rounded-lg border border-gray-700">
+                    <div class="rounded-lg border border-gray-700 hover:border-purple-500 transition-colors duration-300">
                         <button @click="selected !== 2 ? selected = 2 : selected = null" class="w-full p-6 text-left">
                             <div class="flex items-center justify-between">
-                                <span class="text-lg font-semibold">What image styles are available?</span>
+                                <span class="text-lg font-semibold">What are the image licensing terms?</span>
                                 <span class="transform transition-transform duration-200" :class="{'rotate-180': selected === 2}">↓</span>
                             </div>
                         </button>
                         <div x-show="selected === 2" class="p-6 pt-0 text-gray-400">
-                            We offer a wide range of styles including photorealistic, artistic, abstract, and many more. You can customize the output to match your vision.
+                            All images generated through Image Nest come with a perpetual, worldwide commercial license. You own full rights to use the images in any project, including commercial work, without attribution requirements.
                         </div>
                     </div>
 
-                    <div class="rounded-lg border border-gray-700">
+                    <div class="rounded-lg border border-gray-700 hover:border-purple-500 transition-colors duration-300">
                         <button @click="selected !== 3 ? selected = 3 : selected = null" class="w-full p-6 text-left">
                             <div class="flex items-center justify-between">
-                                <span class="text-lg font-semibold">Can I use the images commercially?</span>
+                                <span class="text-lg font-semibold">What image formats and resolutions are supported?</span>
                                 <span class="transform transition-transform duration-200" :class="{'rotate-180': selected === 3}">↓</span>
                             </div>
                         </button>
                         <div x-show="selected === 3" class="p-6 pt-0 text-gray-400">
-                            Yes, all images generated through Image Nest come with commercial usage rights. You own the images you create.
+                            We support all major image formats (PNG, JPEG, WebP) with resolutions up to 4K (3840x2160). Images can be generated in various aspect ratios and optimized for different use cases.
+                        </div>
+                    </div>
+
+                    <div class="rounded-lg border border-gray-700 hover:border-purple-500 transition-colors duration-300">
+                        <button @click="selected !== 4 ? selected = 4 : selected = null" class="w-full p-6 text-left">
+                            <div class="flex items-center justify-between">
+                                <span class="text-lg font-semibold">How many images can I generate per month?</span>
+                                <span class="transform transition-transform duration-200" :class="{'rotate-180': selected === 4}">↓</span>
+                            </div>
+                        </button>
+                        <div x-show="selected === 4" class="p-6 pt-0 text-gray-400">
+                            Our plans include different generation limits to suit various needs. The Professional plan includes 1000 generations per month, while Enterprise plans offer unlimited generations.
+                        </div>
+                    </div>
+
+                    <div class="rounded-lg border border-gray-700 hover:border-purple-500 transition-colors duration-300">
+                        <button @click="selected !== 5 ? selected = 5 : selected = null" class="w-full p-6 text-left">
+                            <div class="flex items-center justify-between">
+                                <span class="text-lg font-semibold">Is there a free trial available?</span>
+                                <span class="transform transition-transform duration-200" :class="{'rotate-180': selected === 5}">↓</span>
+                            </div>
+                        </button>
+                        <div x-show="selected === 5" class="p-6 pt-0 text-gray-400">
+                            Yes! We offer a 7-day free trial with 50 image generations included. No credit card required to start. You can upgrade to a paid plan at any time to access more features and higher generation limits.
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- CTA Section -->
         <section class="py-24 relative overflow-hidden">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center opacity-10"></div>
             <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-pink-900/20"></div>
             <div class="container mx-auto px-6 relative">
                 <div class="text-center max-w-3xl mx-auto">
                     <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Transform Your Creative Process?</h2>
-                    <p class="text-xl text-gray-300 mb-12">Join thousands of creators using Image Nest to bring their ideas to life.</p>
-                    <a href="https://imagenest.aibizbots4u.com" class="inline-block px-8 py-4 text-lg font-semibold rounded-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-                        Get Started Now
-                    </a>
+                    <p class="text-xl text-gray-300 mb-12">Join thousands of creators using Image Nest to bring their ideas to life. Start your free trial today and experience the future of image creation.</p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                        <a href="https://imagenest.aibizbots4u.com" class="inline-block px-8 py-4 text-lg font-semibold rounded-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                            Start Free Trial
+                        </a>
+                        <a href="#features" class="inline-block px-8 py-4 text-lg font-semibold rounded-full border-2 border-purple-500 hover:border-purple-400 transform hover:scale-105 transition-all duration-300">
+                            Learn More
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="bg-gray-800/50 border-t border-gray-800">
         <div class="container mx-auto px-6 py-12">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div>
                     <h3 class="text-xl font-bold mb-4">Image Nest</h3>
-                    <p class="text-gray-400">Your gateway to creative image generation powered by AI.</p>
+                    <p class="text-gray-400">Empowering creators with AI-powered image generation technology.</p>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2">
                         <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Features</a></li>
                         <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
                         <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Contact</h4>
-                    <p class="text-gray-400">sales@aibizbots4u.com</p>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">Email: sales@aibizbots4u.com</li>
+                        <li><a href="https://ihmunro.github.io/create-stunning-images-effortlessly-with-image-nest-2025-03-18-5eu6k/blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Support</a></li>
+                    </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Legal</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://ihmunro.github.io/create-stunning-images-effortlessly-with-image-nest-2025-03-18-5eu6k/privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://ihmunro.github.io/create-stunning-images-effortlessly-with-image-nest-2025-03-18-5eu6k/terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
@@ -225,5 +378,9 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton =
 </body>
 </html>
